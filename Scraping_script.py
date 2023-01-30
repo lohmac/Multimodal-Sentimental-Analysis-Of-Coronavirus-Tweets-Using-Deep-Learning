@@ -24,7 +24,7 @@ class Scrapper():
         c.Images=self.Images  #Include images as well
         c.Pandas=self.Pandas  #save the output data in pandas dataframe
         
-        twint.run.search(c)
+        twint.run.Search(c)
         Tweets_df=twint.storage.panda.Tweets_df
         return Tweets_df
     def run(self):
